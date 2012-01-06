@@ -27,7 +27,7 @@ form[name=contact1] input[type=text].validation-failed{ border: 1px solid red; c
 
 form[name=contact3] .validation-message { color: red; margin-left: 1em; }
 
-#plaid { display:block; width:180px; color: #fff; text-decoration: none; font-weight: bold; font-size: 2em; text-align: center; padding: 1em; position: absolute; top: 3.5em; right: 2.5em; background-color:#ccc; }
+#plaid { display:block; width:180px; color: #fff; text-decoration: none; font-weight: bold; font-size: 2em; text-align: center; padding: 1em; float: right; background-color:#ccc; }
 #plaid:after { content: ' OFF'; }
 #plaid.awesome:after { content: ' ON'; }
 .awesome header, .awesome header a, .awesome .who, .awesome .who a { color: #fff; }
@@ -97,19 +97,20 @@ $(function() {
 <body class="awesome">
 <a href="https://github.com/jukebox42/nextVal"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 <header>
-<p>nextVal <a href="#download">Download</a> | <a href="#usage">Usage</a> | <a href="#reference">Reference</a> | <a href="#examples">Examples</a></p>
+<p><strong>nextVal</strong> <a href="#download">Download</a> | <a href="#usage">Usage</a> | <a href="#reference">Reference</a> | <a href="#examples">Examples</a></p>
 </header>
 
 <section id="download">
 <h2>Download nextVal</h2>
-<p>nextVal is an easy-to-use, flexible and robust form validation plugin for jQuery.<br />Behold, the awesome.</p>
+<a href="#" class="awesome" id="plaid">PLAID</a>
+<p><strong>nextVal</strong> is an easy-to-use, flexible and robust form validation plugin for jQuery.<br />Behold, the awesome.</p>
 <p>Current version: 1.7.5</p>
 <ul>
 	<li><a href="https://github.com/jukebox42/nextVal/zipball/master">Source</a></li>
 	<li><a href="https://github.com/jukebox42/nextVal">Git Repo</a></li>
 </ul>
 
-<a href="#" class="awesome" id="plaid">PLAID</a>
+
 </section>
 
 <section id="usage">
@@ -171,7 +172,7 @@ $(function() {
    $('form[name=FORMNAME]').nextVal({
       customRules:[
          ['matchpassword',function($o){return !($o.val() == $('#password').val());},''],
-         ['xheader',function($o){return !$o.val().match(/^(X-[a-zA-Z0-9_\-]+)*$/);},'Please enter a valid xheader. For example X-UserData1'],
+         ['xheader',function($o){return !$o.val().match(/^X-[a-zA-Z0-9_\-]+$/);},'Please enter a valid xheader. For example X-UserData1'],
       ]
    });
 });</pre>
