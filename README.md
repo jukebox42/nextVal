@@ -25,4 +25,4 @@ Javascript form validation plugin for jQuery
 		</p>
 	</form>
 
-see index.html for more complex use cases.
+see http://jukebox42.github.com/nextVal for full documentation.
