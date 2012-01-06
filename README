@@ -1,0 +1,14 @@
+# jquery.nextVal
+
+Javascript form validation plugin for jQuery
+
+## Usage
+
+	$(function() {
+	   $('form[name=FORM_NAME]').nextVal({
+		  ...options...
+	   });
+	});
+
+## Documentation
+
