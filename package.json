@@ -1,0 +1,36 @@
+{
+    "name": "nextVal",
+    "version": "1.7.5",
+    "title": "jQuery.nextVal()",
+    "author": {
+        "name": "John Norton",
+        "url": "https://github.com/jukebox42"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPL",
+            "url": "GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">= 1.4.0"
+    },
+    "description": "Javascript form validation plugin for jQuery. Validate fields in a snap. jQuery.nextVal()",
+    "keywords": [
+        "validate",
+        "form",
+        "input",
+        "placeholder"
+    ],
+    "homepage": "http://jukebox42.github.com/nextVal/",
+    "contributors": [
+    ],
+    "files": [
+        "jquery.nextval.js"
+		"jquery.nextval.min.js"
+    ]
+}
