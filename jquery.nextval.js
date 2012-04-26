@@ -24,7 +24,7 @@ if(typeof jQuery != 'function'){ alert('You need to include jQuery 1.4.x first.'
 			messageId:           'vmessage-',
 			validationTag:       'ul',
 			submitButton:        '', // jQuery Selector
-			itemCallback:        function(r){return r;},
+			itemCallback:        function($o, r){return r;},
 			formCallback:        function(r){return r;},
 			onCall:              function() {return true;},
 			onBlur:              false,
@@ -191,7 +191,7 @@ if(typeof jQuery != 'function'){ alert('You need to include jQuery 1.4.x first.'
 					$o.parent().addClass((V ? opt.passedStyle : opt.failedStyle));
 				else
 					$o.addClass((V ? opt.passedStyle : opt.failedStyle));
-			var cb = opt.itemCallback(V);
+			var cb = opt.itemCallback($o, V);
 			V = cb == undefined ? V : cb;
 			return V;
 		};
