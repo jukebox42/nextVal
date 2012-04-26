@@ -1,5 +1,5 @@
 /***************************************************************
- * jQuery.nextVal 1.7.5    3/25/2011
+ * jQuery.nextVal 1.7.6    4/26/2012
  * Author: John Norton - jukebox42@gmail.com
  * This version works best with jquery 1.4+
  ***************************************************************/
